@@ -1,0 +1,13 @@
+/* src/components/footer/Footer.module.css */
+.footer {
+    color: #fff;
+    padding: 0.7rem 0.5rem; /* Reduced padding */
+    bottom: 0;
+    width: 100%;
+    background-color: #63ac1e;
+    font-size: 12px;
+    font-family: poppins,sans-serif;
+    text-align: left;
+ padding-top: 5px;
+  }
+

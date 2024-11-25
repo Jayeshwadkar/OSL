@@ -1,0 +1,17 @@
+/* src/components/layout/Layout.module.css */
+.layout_container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main_content {
+  flex: 1;
+  padding: 1rem;
+  padding-bottom: 60px;
+  background-color: #f5f5f5;
+}
+
+.footer {
+  margin-top: auto;
+}

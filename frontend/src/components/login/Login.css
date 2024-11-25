@@ -1,0 +1,176 @@
+/* General Styles */
+.wrap-input {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 25px;
+}
+
+.input {
+  outline: none;
+  border: none;
+}
+
+.input100 {
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #666666;
+  display: block;
+  width: 100%;
+  background: #e6e6e6;
+  height: 50px;
+  padding: 0 30px 0 60px;
+  border-radius: 5px; /* Added border radius for better visuals */
+}
+
+.focus-input100 {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  box-shadow: none; /* Removed box-shadow */
+}
+
+.symbol-input100 {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  border-radius: 25px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 35px;
+  pointer-events: none;
+  color: #666666;
+  transition: all 0.4s;
+}
+
+.input100:focus + .focus-input100 + .symbol-input100 {
+  color: orange;
+  padding-left: 28px;
+}
+
+.forgot_pw {
+  text-align: right;
+  padding: 0 10px;
+  color: red;
+  font-weight: bolder;
+}
+
+/* Form Card */
+.col-lg-6.mb-5.mb-lg-0.form {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.card {
+  border: 0;
+  width: 70% !important;
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+
+.card.signup {
+  width: 50% !important;
+  margin-top: 10px;
+}
+
+/* Button Styles */
+.btn-block {
+  background-color: #FF6B00;
+  border-color: #FF6B00;
+}
+
+a.btn.btn-primary.btn-lg.btn-block {
+  border: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* Background and Layout */
+.sectionimage {
+  background-image: url("../images/login-design_ver_01_bkup.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; /* Center the background image */
+}
+
+img.imgontop {
+  position: absolute;
+  max-width: 100%; /* Ensure responsiveness */
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+
+  .sectionimage {
+    background-position: center;
+  }
+
+  .row.gx-lg-5.align-items-center.down {
+    margin-top: 80px;
+  }
+
+  .col-lg-6.mb-5.mb-lg-0 {
+    text-align: center;
+  }
+
+  .input100 {
+    font-size: 18px;
+    height: 45px;
+  }
+
+  .btn-block {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card.signup {
+    width: 100% !important;
+    margin-top: -30px;
+  }
+  
+  .row.gx-lg-5.align-items-center.down {
+    margin-top: 130px;
+  }
+}
+.h1 {
+  color: white;
+  font-family: "Lato", sans-serif !important;
+}
+.h4 {
+  color: white;
+  font-family: "Lato", sans-serif !important;
+  font-weight: lighter;
+}
+.p {
+  color: white;
+  font-family: "Lato", sans-serif !important;
+  font-weight: lighter;
+}
+
+p.lable {
+  padding-top: 10px;
+}
+
+a.signupbtn {
+  background-color: white;
+  color: orange;
+}
+
+

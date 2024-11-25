@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>b5dc2613-5862-446f-9c8c-cc322c33851f</title>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      text-indent: 0;
+    }
+    
+    tr, td, th {
+      page-break-inside: avoid !important;
+    }
+
+    @media print {
+      table {
+        page-break-inside: avoid !important;
+      }
+      tr, td, th {
+        page-break-inside: avoid !important;
+      }
+      thead {
+        display: table-header-group;
+      }
+      tfoot {
+        display: table-footer-group;
+      }
+      @page {
+        size: A4;
+        margin: 10mm;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div style="text-align: center; margin-bottom: 10px; font-size: 15px;">
+    <strong>Freight Bill</strong>
+  </div>
+  <div style="width: 100%; overflow: hidden">
+    <div style="width: 50%; float: left; font-size: 10px">
+      <strong>To:</strong> {{bill.customer_name}}
+      <br />
+      <strong>GST No:</strong> {{bill.cust.gstno}}
+    </div>
+    <div style="width: 50%; float: right; text-align: right; font-size: 10px">
+      <strong> Bill No: {{bill.bill_no}}</strong> <br />
+      <strong> Date:</strong> <span>{{bill.lrdate}}</span> <br />
+      <strong> GSTIN:</strong> <span>27AFWPB6409B1ZJ</span>
+    </div>
+  </div>
+
+  <table style="border-collapse: collapse; width: 100%;" cellspacing="0">
+    {{itemHeaderHTML}}
+    {{itemSummaries}}
+    <tr>
+      <td style="width: 37pt; border: 1pt solid; font-size: 7pt; text-align: center;">
+        Freight:
+      </td>
+      <td style="width: 47pt; border: 1pt solid; font-size: 7pt; text-align: center;">
+        {{bill.tot_freight}}
+      </td>
+      <td style="width: 103pt; border: 1pt solid; font-size: 7pt; text-align: center;" colspan="2">
+        Delivery Charges:
+      </td>
+      <td style="width: 90pt; border: 1pt solid; font-size: 7pt; text-align: center;">
+        {{bill.delivery_ch}}
+      </td>
+      <td style="width: 79pt; border: 1pt solid; font-size: 7pt; text-align: center;">
+        Hamali:
+      </td>
+      <td style="width: 38pt; border: 1pt solid; font-size: 7pt; text-align: center;">
+        {{bill.tot_hamali}}
+      </td>
+      <td style="width: 75pt; border: 1pt solid; font-size: 7pt; text-align: center;" colspan="2">
+        Other Charges:
+      </td>
+      <td style="width: 37pt; border: 1pt solid; font-size: 7pt; text-align: center;">
+        {{bill.other_ch}}
+      </td>
+      <td style="width: 37pt; border: 1pt solid; font-size: 7pt; text-align: center;">
+        Total:
+      </td>
+      <td style="width: 42pt; border: 1pt solid; font-size: 7pt; text-align: center;">
+        {{bill.tot_amount}}
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 406pt; border: 1pt solid; text-align: center; font-size: 7pt;" colspan="8">
+        In Words: {{bill.tot_amount_words}}
+      </td>
+      <td style="width: 154pt; border: 1pt solid;" colspan="4" rowspan="3">
+        <p style="text-indent: 0pt; text-align: left">
+          <br />
+        </p>
+        <p style="text-align: center; font-size: 10px; margin-top: 20px;">
+          For Rajesh Transport
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="border: 1pt solid; padding: 5px; line-height: 0.7; font-size: 10px;" colspan="8">
+        <strong>Bank Name: Union Bank</strong><br><br>
+        <strong>Branch: Pune - Viman Nagar - Mehta Housing Branch, Pune-411014</strong><br><br>
+        <strong>Account Number: 510101003835005</strong><br><br>
+        <strong>IFSC CODE: UBIN0907391</strong>
+      </td>
+    </tr>
+    <tr>
+      <td style="border: 1pt solid black; font-size: 10px;" colspan="8">
+        Remark: {{bill.b.remarks}}
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

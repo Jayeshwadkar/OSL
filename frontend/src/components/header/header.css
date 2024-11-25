@@ -1,0 +1,114 @@
+#icon {
+    display: flex;
+    font-family: "poppins";
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  #icons {
+    display: flex;
+    font-family: "poppins";
+    color: #000;
+  
+    font-size: 10px;
+    cursor: pointer;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  
+    font-weight: 400;
+  
+    align-items: flex-start;
+    margin-top: 5px;
+  }
+
+#title{
+  text-decoration: none;
+}
+
+  #logo{
+    margin: 10px 0px 0px;
+    width: 100px;
+    height: 57.85px;
+    background:none;
+  }
+
+
+  #icons-details {
+    display: block;
+    font-family: "poppins";
+    color: #000;
+    font-size: 10px;
+    cursor: pointer;
+    
+    font-weight: 400;
+ align-items:flex-start;
+    margin-top: 5px;
+  }
+
+
+  
+  #icons1 {
+    display: flex;
+    font-family: poppins;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    text-decoration-line: none;
+      text-decoration-thickness: initial;
+      text-decoration-style: initial;
+      text-decoration-color: initial;
+    justify-content: flex-end;
+    color: #000;
+    align-items: center;
+    cursor: pointer;
+  }
+
+
+
+  #AlertIcon {
+    margin-top: 8px;
+    display: flex;
+    font-family: poppins;
+    width: 10px;
+    height: 10px;
+    justify-content: flex-start;
+    color: #000;
+    align-items: center;
+  }
+
+
+
+#hover1{
+  text-decoration: none;
+}
+
+
+  #hover1:hover {
+    color: white;
+    background-color: white;
+    text-decoration: none;
+  }
+  #icons11 {
+    color: #000;
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+    font-family: "Poppins";
+    font-weight: 550;
+    padding-top: 5px;
+    display: flex;
+  }
+  .navbar1 {
+    background-color: #ffffff;
+  }
+  #marginicon {
+    margin-left: 30px;
+
+  }
+  #marginicon1 {
+    margin-right: 20px;
+    
+  }

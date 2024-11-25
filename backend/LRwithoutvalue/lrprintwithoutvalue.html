@@ -1,0 +1,393 @@
+<!DOCTYPE  html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>3c0f2c00-bb91-4880-8509-01574121f731</title>
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+                text-indent: 0;
+            }
+
+            .s1 {
+                color: black;
+                font-family: Arial, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                text-decoration: none;
+                font-size: 6pt;
+            }
+
+            .s2 {
+                color: black;
+                font-family: Arial, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                text-decoration: none;
+                font-size: 9pt;
+            }
+
+            .s3 {
+                color: black;
+                font-family: Arial, sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                text-decoration: none;
+                font-size: 7pt;
+            }
+
+            .s4 {
+                color: black;
+                font-family: Arial, sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                text-decoration: none;
+                font-size: 6pt;
+            }
+
+            .s5 {
+                color: black;
+                font-family: Arial, sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                text-decoration: none;
+                font-size: 5pt;
+            }
+
+            .s6 {
+                color: black;
+                font-family: Arial, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                text-decoration: none;
+                font-size: 7pt;
+            }
+
+
+            li {
+                display: block;
+            }
+
+            #l1 {
+                padding-left: 0pt;
+                counter-reset: c1 1;
+            }
+
+            #l1> li>*:first-child:before {
+                counter-increment: c1;
+                content: counter(c1, decimal)") ";
+                color: black;
+                font-family: Arial, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                text-decoration: none;
+                font-size: 7pt;
+            }
+
+            #l1> li:first-child>*:first-child:before {
+                counter-increment: c1 0;
+            }
+
+            table, tbody {
+                vertical-align: top;
+                overflow: visible;
+            
+            }
+        </style>
+    </head>
+    <body>
+        <table style="border-collapse:collapse;margin-left:3%;width:97%;margin-top: 10%;" cellspacing="0">
+            <tr style="height:8pt">
+                <td style="width:187pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" colspan="3">
+                    <p className="s4" style="padding-top: 9pt;padding-left: 2pt;text-indent: 0pt;text-align: left;">LR No.:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{lrData.lr_number}}</p>
+                    <p className="s5" style="padding-top: 2pt;padding-left: 2pt;padding-right: 26pt;text-indent: 0pt;line-height: 149%;text-align: left;">CONSIGNOR: {{lrData.consigner}} <br/>FROM:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   {{lrData.loc_from}}</p>
+                </td>
+                <td style="width:186pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" colspan="2">
+                    <p style="text-indent: 0pt;text-align: left;">
+                        <br/>
+                    </p>
+                    <p className="s5" style="padding-top: 5pt;padding-left:6px;text-indent: 0pt;line-height: 149%;text-align: left;">LR DATE: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{lrData.lrdate}}  <br/>  TRUCK NO.: {{lrData.truck_tempo_number}}</p>
+                </td>
+                <td style="width:187pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" colspan="3">
+                    <p style="text-indent: 0pt;text-align: left;">
+                        <br/>
+                    </p>
+                    <p className="s5" style="padding-top: 5pt;padding-left: 6px;text-indent: 0pt;line-height: 149%;">CONSIGNEE: {{lrData.consignee}} <br/>TO :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    {{lrData.loc_to}}</p>
+                </td>
+            </tr>
+            <tr style="height:20pt">
+                <td style="width:62pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt">
+                    <p className="s3" style="padding-top: 2pt;text-align: center;">NO OF PACKAGES</p>
+                </td>
+                <td style="width:62pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt">
+                    <p className="s3" style="padding-top: 2pt;text-align: center;">ACTUAL WEIGHT</p>
+                </td>
+                <td style="width:66pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt">
+                    <p className="s3" style="padding-top: 2pt;text-align: center;">CHARGE WEIGHT</p>
+                </td>
+                <td style="width:62pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt">
+                    <p className="s3" style="padding-top: 2pt;text-align: center;">METHOD OF PACKAGING</p>
+                </td>
+                <td style="width:124pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt">
+                    <p className="s3" style="padding-top: 2pt;text-align: center;">NATURE OF GOODS</p>
+                </td>
+                <td style="width:62pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt">
+                    <p className="s3" style="padding-top: 2pt;text-align: center;">RATE</p>
+                </td>
+                <td style="width:63pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt">
+                    <p className="s3" style="padding-top: 2pt;text-align: center;">PARTICULAR</p>
+                </td>
+                <td style="width:62pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt">
+                    <p className="s3" style="padding-top: 2pt;text-align: center;">RS./PS.</p>
+                </td>
+            </tr>
+            
+           
+            {{itemSummaries}}
+                
+            <table style="border-collapse: collapse;  margin-left: 3%;width: 97%;">
+                <tr style="height:20pt">
+                    <!-- First column -->
+                    <td style="width:17.4%;border-bottom: 1pt solid black;border-top: 1pt solid black;border-right: 1pt solid black;border-left: 1pt solid black;">
+                        <p className="s1" style="padding-top: 2pt;  text-indent: 0pt; text-align: center;">
+                            P. MARK <br/> <span style="margin-left: 3px;">{{lrData.consignote}}</span>
+                        </p>
+                    </td>
+            
+                    <!-- Second column -->
+                    <td style="width:18.5%;border-bottom: 1pt solid black;border-top: 1pt solid black;border-right: 1pt solid black;border-left: 1pt solid black;">
+                        <p className="s1" style="padding-top: 2pt;  text-indent: 0pt; text-align: center;">
+                            BOOKING TYPE
+                        </p>
+                        <span className="s1" style="display: inline-block;  margin-left: 35%;">{{lrData.pay_type}}</span>
+                    </td>
+                    
+        
+                    <!-- Third column -->
+                    <td style="width:20.7%;border-bottom: 1pt solid black;border-top: 1pt solid black;border-right: 1pt solid black;border-left: 1pt solid black;">
+                        <p className="s1"  style="padding-top: 2pt;  text-indent: 0pt; text-align: center;">
+                            VALUE OF GOODS </p><span className="s1" style="display: inline-block;  margin-left: 40%;">{{lrData.material_cost}}</span> 
+                        
+                    </td>
+            
+                    <td style="width:10.2%;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: 1pt solid black;">
+                        <p className="s1" style="padding-top: 1pt;border-bottom: 1pt solid;">
+                            &nbsp;Collection
+                        </p>
+                        <p className="s1" style="padding-top: 1pt;">
+                            &nbsp;Total
+                        </p>
+                    </td>
+                    
+            
+                    <!-- Fifth column -->
+                    <td style="width:8%;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: 1pt solid black;">
+                        <p className="s1" style="padding-top: 1pt; padding-right: 1pt; margin-top: 10px;text-indent: 0pt; text-align: right;border-bottom: 1pt solid;">
+                            
+                        </p>
+                        <p className="s1" style="padding-top: 1pt; padding-right: 1pt; text-indent: 0pt; text-align: right;">
+                        
+                        </p>
+                    </td>
+                </tr>
+            
+              
+            </table>
+            
+        
+        
+            <table style="border-collapse:collapse;margin-left:3%;width:97%;margin-top: 22%;" cellspacing="0">
+                <tr style="height:8pt">
+                    <td style="width:187pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" colspan="3">
+                        <p className="s4" style="padding-top: 9pt;padding-left: 2pt;text-indent: 0pt;text-align: left;">LR No.:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{lrData.lr_number2}}</p>
+                        <p className="s5" style="padding-top: 2pt;padding-left: 2pt;padding-right: 26pt;text-indent: 0pt;line-height: 149%;text-align: left;">CONSIGNOR: {{lrData.consigner2}} <br/>FROM:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   {{lrData.loc_from2}}</p>
+                    </td>
+                    <td style="width:186pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" colspan="2">
+                        <p style="text-indent: 0pt;text-align: left;">
+                            <br/>
+                        </p>
+                        <p className="s5" style="padding-top: 5pt;padding-left:6px;text-indent: 0pt;line-height: 149%;text-align: left;">LR DATE: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{lrData.lrdate2}}  <br/>  TRUCK NO.: {{lrData.truck_tempo_number2}}</p>
+                    </td>
+                    <td style="width:187pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" colspan="3">
+                        <p style="text-indent: 0pt;text-align: left;">
+                            <br/>
+                        </p>
+                        <p className="s5" style="padding-top: 5pt;padding-left: 6px;text-indent: 0pt;line-height: 149%;">CONSIGNEE: {{lrData.consignee2}} <br/>TO :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    {{lrData.loc_to2}}</p>
+                    </td>
+                </tr>
+                <tr style="height:20pt">
+                    <td style="width:62pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt">
+                        <p className="s3" style="padding-top: 2pt;text-align: center;">NO OF PACKAGES</p>
+                    </td>
+                    <td style="width:62pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt">
+                        <p className="s3" style="padding-top: 2pt;text-align: center;">ACTUAL WEIGHT</p>
+                    </td>
+                    <td style="width:66pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt">
+                        <p className="s3" style="padding-top: 2pt;text-align: center;">CHARGE WEIGHT</p>
+                    </td>
+                    <td style="width:62pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt">
+                        <p className="s3" style="padding-top: 2pt;text-align: center;">METHOD OF PACKAGING</p>
+                    </td>
+                    <td style="width:124pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt">
+                        <p className="s3" style="padding-top: 2pt;text-align: center;">NATURE OF GOODS</p>
+                    </td>
+                    <td style="width:62pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt">
+                        <p className="s3" style="padding-top: 2pt;text-align: center;">RATE</p>
+                    </td>
+                    <td style="width:63pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt">
+                        <p className="s3" style="padding-top: 2pt;text-align: center;">PARTICULAR</p>
+                    </td>
+                    <td style="width:62pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt">
+                        <p className="s3" style="padding-top: 2pt;text-align: center;">RS./PS.</p>
+                    </td>
+                </tr>
+                
+               
+                {{itemSummaries2}}
+                    
+                <table style="border-collapse: collapse;  margin-left: 3%;width: 97%;">
+                    <tr style="height:20pt">
+                        <!-- First column -->
+                        <td style="width:17.4%;border-bottom: 1pt solid black;border-top: 1pt solid black;border-right: 1pt solid black;border-left: 1pt solid black;">
+                            <p className="s1" style="padding-top: 2pt;  text-indent: 0pt; text-align: center;">
+                                P. MARK <br/> <span style="margin-left: 3px;">{{lrData.consignote2}}</span>
+                            </p>
+                        </td>
+                
+                        <!-- Second column -->
+                        <td style="width:18.5%;border-bottom: 1pt solid black;border-top: 1pt solid black;border-right: 1pt solid black;border-left: 1pt solid black;">
+                            <p className="s1" style="padding-top: 2pt;  text-indent: 0pt; text-align: center;">
+                                BOOKING TYPE
+                            </p>
+                            <span className="s1" style="display: inline-block;  margin-left: 35%;">{{lrData.pay_type2}}</span>
+                        </td>
+                        
+            
+                        <!-- Third column -->
+                        <td style="width:20.7%;border-bottom: 1pt solid black;border-top: 1pt solid black;border-right: 1pt solid black;border-left: 1pt solid black;">
+                            <p className="s1"  style="padding-top: 2pt;  text-indent: 0pt; text-align: center;">
+                                VALUE OF GOODS </p><span className="s1" style="display: inline-block;  margin-left: 40%;">{{lrData.material_cost2}}</span> 
+                            
+                        </td>
+                
+                        <td style="width:10.2%;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: 1pt solid black;">
+                            <p className="s1" style="padding-top: 1pt;border-bottom: 1pt solid;">
+                                &nbsp;Collection
+                            </p>
+                            <p className="s1" style="padding-top: 1pt;">
+                                &nbsp;Total
+                            </p>
+                        </td>
+                        
+                
+                        <!-- Fifth column -->
+                        <td style="width:8%;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: 1pt solid black;">
+                            <p className="s1" style="padding-top: 1pt; padding-right: 1pt;margin-top: 10px; text-indent: 0pt; text-align: right;border-bottom: 1pt solid;">
+                                
+                            </p>
+                            <p className="s1" style="padding-top: 1pt; padding-right: 1pt; text-indent: 0pt; text-align: right;">
+                            
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+        
+                <table style="border-collapse:collapse;margin-left:3%;width:97%;margin-top: 20%;" cellspacing="0">
+                    <tr style="height:6pt">
+                        <td style="width:187pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" colspan="3">
+                            <p className="s4" style="padding-top: 9pt;padding-left: 2pt;text-indent: 0pt;text-align: left;">LR No.:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{lrData.lr_numbers}}</p>
+                            <p className="s5" style="padding-top: 2pt;padding-left: 2pt;padding-right: 26pt;text-indent: 0pt;line-height: 149%;text-align: left;">CONSIGNOR: {{lrData.consigner3}} <br/>FROM:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   {{lrData.loc_from3}}</p>
+                        </td>
+                        <td style="width:186pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" colspan="2">
+                            <p style="text-indent: 0pt;text-align: left;">
+                                <br/>
+                            </p>
+                            <p className="s5" style="padding-top: 5pt;padding-left:6px;text-indent: 0pt;line-height: 149%;text-align: left;">LR DATE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{lrData.lrdate3}}  <br/>  TRUCK NO.: {{lrData.truck_tempo_number3}}</p>
+                        </td>
+                        <td style="width:187pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt" colspan="3">
+                            <p style="text-indent: 0pt;text-align: left;">
+                                <br/>
+                            </p>
+                            <p className="s5" style="padding-top: 5pt;padding-left: 6px;text-indent: 0pt;line-height: 149%;">CONSIGNEE: {{lrData.consignee3}} <br/>TO : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   {{lrData.loc_to3}}</p>
+                        </td>
+                    </tr>
+                    <tr style="height:18pt">
+                        <td style="width:62pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt">
+                            <p className="s3" style="padding-top: 2pt;text-align: center;">NO OF PACKAGES</p>
+                        </td>
+                        <td style="width:62pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt">
+                            <p className="s3" style="padding-top: 2pt;text-align: center;">ACTUAL WEIGHT</p>
+                        </td>
+                        <td style="width:66pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt">
+                            <p className="s3" style="padding-top: 2pt;text-align: center;">CHARGE WEIGHT</p>
+                        </td>
+                        <td style="width:62pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt">
+                            <p className="s3" style="padding-top: 2pt;text-align: center;">METHOD OF PACKAGING</p>
+                        </td>
+                        <td style="width:124pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt">
+                            <p className="s3" style="padding-top: 2pt;text-align: center;">NATURE OF GOODS</p>
+                        </td>
+                        <td style="width:62pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt">
+                            <p className="s3" style="padding-top: 2pt;text-align: center;">RATE</p>
+                        </td>
+                        <td style="width:63pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt">
+                            <p className="s3" style="padding-top: 2pt;text-align: center;">PARTICULAR</p>
+                        </td>
+                        <td style="width:62pt;border-top-style:solid;border-top-width:1pt;border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-right-style:solid;border-right-width:1pt">
+                            <p className="s3" style="padding-top: 2pt;text-align: center;">RS./PS.</p>
+                        </td>
+                    </tr>
+                    
+                   
+                    {{itemSummaries3}}
+                        
+                    <table style="border-collapse: collapse;  margin-left: 3%;width: 97%;">
+                        <tr style="height:18pt">
+                            <!-- First column -->
+                            <td style="width:17.4%;border-bottom: 1pt solid black;border-top: 1pt solid black;border-right: 1pt solid black;border-left: 1pt solid black;">
+                                <p className="s1" style="padding-top: 2pt;  text-indent: 0pt; text-align: center;">
+                                    P. MARK <br/> <span style="margin-left: 3px;">{{lrData.consignote3}}</span>
+                                </p>
+                            </td>
+                    
+                            <!-- Second column -->
+                            <td style="width:18.5%;border-bottom: 1pt solid black;border-top: 1pt solid black;border-right: 1pt solid black;border-left: 1pt solid black;">
+                                <p className="s1" style="padding-top: 2pt;  text-indent: 0pt; text-align: center;">
+                                    BOOKING TYPE
+                                </p>
+                                <span className="s1" style="display: inline-block;  margin-left: 35%;">{{lrData.pay_type3}}</span>
+                            </td>
+                            
+                
+                            <!-- Third column -->
+                            <td style="width:20.7%;border-bottom: 1pt solid black;border-top: 1pt solid black;border-right: 1pt solid black;border-left: 1pt solid black;">
+                                <p className="s1"  style="padding-top: 2pt;  text-indent: 0pt; text-align: center;">
+                                    VALUE OF GOODS </p><span className="s1" style="display: inline-block;  margin-left: 40%;">{{lrData.material_cost3}}</span> 
+                                
+                            </td>
+                    
+                            <td style="width:10.2%;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: 1pt solid black;">
+                                <p className="s1" style="padding-top: 1pt;border-bottom: 1pt solid;">
+                                    &nbsp;Collection
+                                </p>
+                                <p className="s1" style="padding-top: 1pt;">
+                                    &nbsp;Total
+                                </p>
+                            </td>
+                            
+                    
+                            <!-- Fifth column -->
+                            <td style="width:8%;border-bottom: 1pt solid black;border-right: 1pt solid black;border-left: 1pt solid black;">
+                                <p className="s1" style="padding-top: 1pt; padding-right: 1pt;margin-top: 10px; text-indent: 0pt; text-align: right;border-bottom: 1pt solid;">
+                        
+                                </p>
+                                <p className="s1" style="padding-top: 1pt; padding-right: 1pt; text-indent: 0pt; text-align: right;">
+                                
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+            
+    </body>
+</html>
